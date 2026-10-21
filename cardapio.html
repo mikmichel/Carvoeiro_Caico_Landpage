@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio | Carvoeiro Caicó</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Open Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+        .bg-carvao { background-color: #121212; }
+        .text-brasa { color: #FF4500; }
+        .bg-brasa { background-color: #FF4500; }
+        .text-gelo { color: #F5F5F5; }
+        .menu-item { border-bottom: 1px dotted rgba(245, 245, 245, 0.2); }
+    </style>
+</head>
+<body class="bg-carvao text-gelo pb-20">
+
+    <!-- NAVBAR SIMPLIFICADA -->
+    <nav class="w-full bg-carvao border-b border-white/10 py-4 px-6 flex justify-between items-center sticky top-0 z-50">
+        <a href="index.html" class="flex items-center text-gelo hover:text-brasa transition">
+            <i class="fas fa-arrow-left mr-2"></i> Voltar
+        </a>
+        <div class="text-xl font-extrabold tracking-tighter">
+            CARVOEIRO<span class="text-brasa">.</span>
+        </div>
+        <a href="https://wa.me/5584997062957" target="_blank" class="bg-brasa text-white px-4 py-2 rounded-full font-bold text-xs transition">
+            PEDIR AGORA
+        </a>
+    </nav>
+
+    <!-- HEADER DO CARDÁPIO -->
+    <header class="py-10 text-center">
+        <h1 class="text-4xl font-extrabold mb-2">NOSSO <span class="text-brasa">CARDÁPIO</span></h1>
+        <p class="text-gray-400">Escolha a sua melhor experiência em carnes e drinks</p>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-6 space-y-12">
+
+        <!-- SEÇÃO: PRA ENCHER O BUCHO & PETISCOS -->
+        <section>
+            <h2 class="text-2xl font-bold text-brasa mb-6 flex items-center">
+                <i class="fas fa-utensils mr-3"></i> Pratos & Petiscos
+            </h2>
+            <div class="space-y-4">
+                <div class="menu-item flex justify-between items-end py-2">
+                    <div>
+                        <span class="font-bold block">Carne com carnes (Completo)</span>
+                        <span class="text-xs text-gray-400">Acompanha arroz, farofa e salada</span>
+                    </div>
+                    <span class="font-bold text-brasa">R$ 65,00</span>
+                </div>
+                <div class="menu-item flex justify-between items-end py-2">
+                    <div>
+                        <span class="font-bold block">Costela no bafo</span>
+                        <span class="text-xs text-gray-400">Suculenta e desmanchando</span>
+                    </div>
+                    <span class="font-bold text-brasa">R$ 55,00</span>
+                </div>
+                <div class="menu-item flex justify-between items-end py-2">
+                    <div>
+                        <span class="font-bold block">Arroz de Carreteiro</span>
+                        <span class="text-xs text-gray-400">Tradicional e saboroso</span>
+                    </div>
+                    <span class="font-bold text-brasa">R$ 40,00</span>
+                </div>
+                <div class="menu-item flex justify-between items-end py-2">
+                    <div>
+                        <span class="font-bold block">Petisco de Frango</span>
+                    </div>
+                    <span class="font-bold text-brasa">R$ 35,00</span>
+                </div>
+                <div class="menu-item flex justify-between items-end py-2">
+                    <div>
+                        <span class="font-bold block">Batata Frita Especial</span>
+                    </div>
+                    <span class="font-bold text-brasa">R$ 25,00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: ESPETOS -->
+        <section>
+            <h2 class="text-2xl font-bold text-brasa mb-6 flex items-center">
+                <i class="fas fa-fire mr-3"></i> Espetos
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                <div class="menu-item flex justify-between items-center py-2">
+                    <span class="font-semibold">Parmegiana de Carne</span>
+                    <span class="font-bold text-brasa">R$ 20,00</span>
+                </div>
+                <div class="menu-item flex justify-between items-center py-2">
+                    <span class="font-semibold">Parmegiana de Frango</span>
+                    <span class="font-bold text-brasa">R$ 17,00</span>
+                </div>
+                <div class="menu-item flex justify-between items-center py-2">
+                    <span class="font-semibold">Picanha Premium</span>
+                    <span class="font-bold text-brasa">R$ 25,00</span>
+                </div>
+                <div class="menu-item flex justify-between items-center py-2">
+                    <span class="font-semibold">Queijo Coalho</span>
+                    <span class="font-bold text-brasa">R$ 15,00</span>
+                </div>
+                <div class="menu-item flex justify-between items-center py-2">
+                    <span class="font-semibold">Medalhão de Frango</span>
+                    <span class="font-bold text-brasa">R$ 18,00</span>
+                </div>
+                <div class="menu-item flex justify-between items-center py-2">
+                    <span class="font-semibold">Coração de Frango</span>
+                    <span class="font-bold text-brasa">R$ 18,00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: HAMBÚRGUERES -->
+        <section>
+            <h2 class="text-2xl font-bold text-brasa mb-6 flex items-center">
+                <i class="fas fa-hamburger mr-3"></i> Hambúrgueres
+            </h2>
+            <div class="space-y-4">
+                <div class="menu-item flex justify-between items-end py-2">
+                    <div>
+                        <span class="font-bold block">Sardo do Sardo</span>
+                        <span class="text-xs text-gray-400">Pão, carne, queijo, alface, tomate e maionese</span>
+                    </div>
+                    <span class="font-bold text-brasa">R$ 24,90</span>
+                </div>
+                <div class="menu-item flex justify-between items-end py-2">
+                    <div>
+                        <span class="font-bold block">Hamburguer Carvoeiro</span>
+                        <span class="text-xs text-gray-400">O clássico da casa com molho especial</span>
+                    </div>
+                    <span class="font-bold text-brasa">R$ 28,90</span>
+                </div>
+                <div class="menu-item flex justify-between items-end py-2">
+                    <div>
+                        <span class="font-bold block">Combo (+ Batata Frita)</span>
+                    </div>
+                    <span class="font-bold text-brasa">+ R$ 5,90</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: BEBIDAS & DRINKS -->
+        <section>
+            <h2 class="text-2xl font-bold text-brasa mb-6 flex items-center">
+                <i class="fas fa-glass-cheers mr-3"></i> Bebidas & Drinks
+            </h2>
+            
+            <!-- Subcategoria: Chopp -->
+            <div class="mb-8 bg-white/5 p-4 rounded-2xl border border-white/10">
+                <h3 class="text-lg font-bold mb-4 flex items-center text-white">
+                    <i class="fas fa-beer mr-2 text-yellow-500"></i> Chopp Oktos
+                </h3>
+                <div class="space-y-3">
+                    <div class="flex justify-between items-center">
+                        <span>Chopp Pilsen (300ml)</span>
+                        <span class="font-bold text-brasa">R$ 10,90</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span>Chopp IPA (300ml)</span>
+                        <span class="font-bold text-brasa">R$ 15,90</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subcategoria: Drinks -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+                <div class="menu-item flex justify-between items-center py-2">
+                    <span class="font-semibold">Caipirinha</span>
+                    <span class="font-bold text-brasa">R$ 16,00</span>
+                </div>
+                <div class="menu-item flex justify-between items-center py-2">
+                    <span class="font-semibold">Gin Tônica</span>
+                    <span class="font-bold text-brasa">R$ 22,00</span>
+                </div>
+                <div class="menu-item flex justify-between items-center py-2">
+                    <span class="font-semibold">Moscow Mule</span>
+                    <span class="font-bold text-brasa">R$ 22,00</span>
+                </div>
+                <div class="menu-item flex justify-between items-center py-2">
+                    <span class="font-semibold">Mojito</span>
+                    <span class="font-bold text-brasa">R$ 21,00</span>
+                </div>
+                <div class="menu-item flex justify-between items-center py-2">
+                    <span class="font-semibold">Cerveja Lata</span>
+                    <span class="font-bold text-brasa">Consulte</span>
+                </div>
+                <div class="menu-item flex justify-between items-center py-2">
+                    <span class="font-semibold">Refrigerante</span>
+                    <span class="font-bold text-brasa">R$ 7,00</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ DE CONVERSÃO -->
+    <div class="fixed bottom-0 w-full bg-carvao/90 backdrop-blur-md border-t border-white/10 p-4 text-center">
+        <a href="https://wa.me/5584997062957?text=Olá! Quero fazer um pedido do cardápio." target="_blank" 
+           class="bg-brasa text-white px-8 py-3 rounded-full font-extrabold text-lg inline-flex items-center transition transform hover:scale-105 shadow-lg shadow-orange-600/20">
+            FAZER PEDIDO VIA WHATSAPP <i class="fab fa-whatsapp ml-2"></i>
+        </a>
+    </div>
+
+</body>
+</html>

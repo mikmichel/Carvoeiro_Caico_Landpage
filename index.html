@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carvoeiro Caicó | O Sabor Autêntico do Fogo</title>
+    <!-- Tailwind CSS para estilização rápida e moderna -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Montserrat para Títulos e Open Sans para Corpo -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        body { font-family: 'Open Sans', sans-serif; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+        .bg-carvao { background-color: #121212; }
+        .text-brasa { color: #FF4500; }
+        .bg-brasa { background-color: #FF4500; }
+        .bg-brasa:hover { background-color: #e63e00; }
+        .text-gelo { color: #F5F5F5; }
+    </style>
+</head>
+<body class="bg-carvao text-gelo">
+
+    <!-- NAVBAR -->
+    <nav class="fixed w-full z-50 bg-carvao/90 backdrop-blur-md border-b border-white/10 py-4 px-6 flex justify-between items-center">
+        <div class="text-2xl font-extrabold tracking-tighter">
+            CARVOEIRO<span class="text-brasa">.</span>
+        </div>
+        <div class="hidden md:flex space-x-8 font-semibold">
+            <a href="#inicio" class="hover:text-brasa transition">Início</a>
+            <a href="#sobre" class="hover:text-brasa transition">Sobre</a>
+            <a href="#cardapio" class="hover:text-brasa transition">Cardápio</a>
+            <a href="#localizacao" class="hover:text-brasa transition">Localização</a>
+        </div>
+        <a href="https://wa.me/5584997062957?text=Olá! Gostaria de fazer uma reserva no Carvoeiro." target="_blank" 
+           class="bg-brasa text-white px-5 py-2 rounded-full font-bold text-sm transition transform hover:scale-105">
+            PEDIR AGORA
+        </a>
+    </nav>
+
+    <!-- SECTION HERO -->
+    <section id="inicio" class="relative h-screen flex items-center justify-center text-center px-4">
+        <!-- Imagem de Fundo com Overlay Escuro -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" 
+                 alt="Churrasco Premium" class="w-full h-full object-cover opacity-40">
+            <div class="absolute inset-0 bg-gradient-to-t from-carvao via-transparent to-carvao"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                O SABOR AUTÊNTICO <br> <span class="text-brasa">DO FOGO EM CAICÓ</span>
+            </h1>
+            <p class="text-lg md:text-xl mb-10 text-gray-300 max-w-2xl mx-auto">
+                Carnes premium selecionadas, ponto perfeito e a arte do verdadeiro churrasco artesanal.
+            </p>
+            <a href="https://wa.me/5584997062957?text=Olá! Gostaria de fazer uma reserva no Carvoeiro." target="_blank" 
+               class="bg-brasa text-white px-8 py-4 rounded-full font-extrabold text-lg transition transform hover:scale-110 shadow-lg shadow-orange-600/20">
+                RESERVAR MINHA MESA <i class="fab fa-whatsapp ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECTION SOBRE -->
+    <section id="sobre" class="py-20 px-6 max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                 alt="Ambiente Carvoeiro" class="rounded-2xl shadow-2xl border-2 border-white/10">
+        </div>
+        <div>
+            <h2 class="text-4xl font-bold mb-6">A Experiência <span class="text-brasa">Carvoeiro</span></h2>
+            <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                No Carvoeiro, transformamos o churrasco em uma experiência sensorial. Combinamos a tradição do fogo com cortes de alta qualidade para entregar um sabor inigualável no coração de Caicó.
+            </p>
+            <p class="text-gray-400 text-lg leading-relaxed">
+                Aqui, a brasa é a protagonista e cada detalhe é pensado para que você e sua família tenham momentos inesquecíveis ao redor da melhor carne da região.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION CARDÁPIO (VITRINE) -->
+    <section id="cardapio" class="py-20 bg-white/5 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12">Nossas <span class="text-brasa">Especialidades</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-carvao p-4 rounded-2xl border border-white/10 hover:border-brasa transition group">
+                    <img src="assets/images/picanha_premium.jpg" 
+                    <img src="assets/images/picanha_premium.jpg" 
+                         class="w-full h-64 object-cover rounded-xl mb-4 group-hover:scale-105 transition duration-300">
+                    <h3 class="text-xl font-bold mb-2">Picanha Premium</h3>
+                    <p class="text-gray-400 text-sm">A rainha do churrasco, suculenta e preparada no ponto perfeito.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-carvao p-4 rounded-2xl border border-white/10 hover:border-brasa transition group">
+                    <img src="assets/images/cortes_nobres.jpg" 
+                         class="w-full h-64 object-cover rounded-xl mb-4 group-hover:scale-105 transition duration-300">
+                    <h3 class="text-xl font-bold mb-2">Cortes Nobres</h3>
+                    <p class="text-gray-400 text-sm">Seleção de carnes especiais para paladares exigentes.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-carvao p-4 rounded-2xl border border-white/10 hover:border-brasa transition group">
+                    <img src="assets/images/acompanhamentos.jpg" 
+                         class="w-full h-64 object-cover rounded-xl mb-4 group-hover:scale-105 transition duration-300">
+                    <h3 class="text-xl font-bold mb-2">Acompanhamentos</h3>
+                    <p class="text-gray-400 text-sm">O complemento perfeito para elevar a experiência do seu churrasco.</p>
+                </div>
+            </div>
+            
+            <a href="cardapio.html"  
+               class="inline-block mt-12 border-2 border-brasa text-brasa px-8 py-3 rounded-full font-bold hover:bg-brasa hover:text-white transition">
+                VER CARDÁPIO COMPLETO
+            </a>
+        </div>
+    </section>
+
+    <!-- SECTION LOCALIZAÇÃO -->
+    <section id="localizacao" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold mb-4">Onde <span class="text-brasa">Estamos</span></h2>
+            <p class="text-gray-400">Praça Valfredo Gurgel, 23 - Centro, Caicó - RN</p>
+        </div>
+        
+        <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white/10 h-[450px]">
+            <!-- Google Maps Embed -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3855.353939383354!2d-37.0961161!3d-6.4580439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7afed9e5f08f6ff%3A0x418b13ad6697f849!2sCarvoeiro%20Caic%C3%B3!5e0!3m2!1spt-BR!2sbr!4v1700000000000" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 bg-black text-center border-t border-white/10">
+        <div class="mb-6 text-2xl font-extrabold">
+            CARVOEIRO<span class="text-brasa">.</span>
+        </div>
+        <div class="flex justify-center space-x-6 mb-8">
+            <a href="https://www.instagram.com/carvoeirocaico/" target="_blank" class="text-2xl hover:text-brasa transition"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5584997062957" target="_blank" class="text-2xl hover:text-brasa transition"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p class="text-gray-500 text-sm">&copy; 2026 Carvoeiro Caicó. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  /*  <a href="https://wa.me/5584997062957?text=Olá! Gostaria de mais informações." 
+       target="_blank" 
+       class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl z-50 hover:scale-110 transition transform">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+	*/
+
+</body>
+</html>
